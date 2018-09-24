@@ -1,0 +1,32 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "steemd",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/programs/steemd/steemd",
+            "args": ["-d", "wikiinvestigation", "--enable-stale-production"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/programs/steemd/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "cli_wallet",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/programs/cli_wallet/cli_wallet",
+            "args": ["-d", "wikiinvestigation"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build/programs/cli_wallet/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+    ]
+}
